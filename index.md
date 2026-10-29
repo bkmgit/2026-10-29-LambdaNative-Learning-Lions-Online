@@ -216,10 +216,10 @@ address.
             Explain who your audience is.  (In particular, tell readers if the
             workshop is only open to people from a particular institution.
             {% endcomment %}
-            {% assign who_file = site.carpentry | append: '/who.html' %}
-            {% if isOfficial %}
-            {% include {{ who_file }} %}
-            {% endif %}    
+            The course is aimed at people interested in creating applications that will run on their mobile phones.
+            You don't need to have any previous knowledge of the tools that will be presented at the workshop. A laptop
+            or tablet with internet access is needed to take part in the workshop.  To test out the applications, a
+            device running Android is also needed, though these can be shared between participants.   
         </dd>
     </div>
     <div class="row">
@@ -278,10 +278,9 @@ address.
                 Participants must bring a laptop with a
                 Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
             {% else %}
-                Participants must have access to a computer with a
-                Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+                Participants should have access to a computer with a web browser that can run javascript.  An Android mobile phone
+                that they have administrative privileges on would also be useful.
             {% endif %}
-            They should have a few specific software packages installed (listed <a href="#setup">below</a>).
             </p>
         </dd>  
     </div>
@@ -440,7 +439,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
                 <h5 class="card-title">Pre-Workshop Survey</h5>
                 <p class="card-text">Please fill out this survey <strong>before attending</strong> the workshop.</p>
                 {% if site.carpentry == "incubator" %}
-                <a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a>
+                <a href="https://carpentries.typeform.com/to/wi32rS?slug=2026-10-29-LambdaNative-Learning-Lions-Online">Pre-workshop Survey</a>
                 {% elsif site.incubator_pre_survey %}
                 <div class="alert alert-danger">
                 WARNING: you have defined custom pre- and/or post-survey links for
@@ -464,7 +463,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
                 <h5 class="card-title">Post-Workshop Survey</h5>
                 <p class="card-text">Please fill out this survey <strong>before you leave</strong> the workshop.</p>
                 {% if site.carpentry == "incubator" %}
-                <a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a>
+                <a href="https://carpentries.typeform.com/to/UgVdRQ?slug=2026-10-29-LambdaNative-Learning-Lions-Online">Post-workshop Survey</a>
                 {% elsif site.incubator_post_survey %}
                 <div class="alert alert-danger">
                 WARNING: you have defined custom pre- and/or post-survey links for
